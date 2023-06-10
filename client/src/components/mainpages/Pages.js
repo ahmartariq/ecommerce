@@ -22,8 +22,10 @@ function Pages() {
     <Route path='/detail/:id' exact component={DetailProduct}/>
     <Route path='/cart' exact component={Cart}/>
     <Route path='/login' exact component={isLogged ? NotFound : Login}/>
+    <Route path='/register' exact component={isLogged ? NotFound : Register}/>
     <Route path='/history' exact component={isLogged ? OrderHistory : NotFound}/>
     <Route path='/history/:id' exact component={isLogged ? OrderDetails : NotFound}/>
+    
 
 
     <Route path='/category' exact component={isAdmin ? Categories : NotFound}/>
